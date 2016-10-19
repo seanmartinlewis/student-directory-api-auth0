@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>students directory</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Welcome</h1>
+    <button type="button" id="btn-login">Click Here to Login In</button>
+
+
+    <div id="app-info" style="display: none">
+
+    <h1 id="username"></h1>
+    <img id="profilepic" src="" />
+
+    <h1>Student Directory</h1>
+
+    <form class="" id="postStudent" action="index.html" method="post">
+      <input type="text" id="studentPostFirst" name="name" value="" placeholder="First Name">
+      <input type="text" id="studentPostLast" name="name" value="" placeholder="First Name">
+      <input type="submit" value="ADD STUDENT TO DIRECTORY">
+    </form>
+
+
+
+    <ul id="student-names"></ul>
+
+    <button type="button" id="btn-logout">LOG THE FUCK OUT</button>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.auth0.com/js/lock/10.4/lock.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
